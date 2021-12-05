@@ -1,0 +1,26 @@
+group,function,value,throughput_num,throughput_type,sample_measured_value,unit,iteration_count
+postgres,sqlx,pool=08 worker=04,,,4028857.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3483749.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4422963.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3835154.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4123159.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3753554.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4372262.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4337662.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3932156.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3776454.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3781553.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4812269.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4677167.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3677352.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3618151.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3875855.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3946957.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3695152.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3823754.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3704753.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3879355.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4217959.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,4404563.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3898256.0,ns,3
+postgres,sqlx,pool=08 worker=04,,,3780054.0,ns,3
