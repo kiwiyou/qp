@@ -1,0 +1,26 @@
+group,function,value,throughput_num,throughput_type,sample_measured_value,unit,iteration_count
+core,r2d2,pool=08 worker=01,,,3178282.0,ns,8
+core,r2d2,pool=08 worker=01,,,6812576.0,ns,16
+core,r2d2,pool=08 worker=01,,,9275340.0,ns,24
+core,r2d2,pool=08 worker=01,,,14225467.0,ns,32
+core,r2d2,pool=08 worker=01,,,19158695.0,ns,40
+core,r2d2,pool=08 worker=01,,,24424531.0,ns,48
+core,r2d2,pool=08 worker=01,,,28573538.0,ns,56
+core,r2d2,pool=08 worker=01,,,24738439.0,ns,64
+core,r2d2,pool=08 worker=01,,,33379963.0,ns,72
+core,r2d2,pool=08 worker=01,,,34283585.0,ns,80
+core,r2d2,pool=08 worker=01,,,37089958.0,ns,88
+core,r2d2,pool=08 worker=01,,,37221562.0,ns,96
+core,r2d2,pool=08 worker=01,,,43405722.0,ns,104
+core,r2d2,pool=08 worker=01,,,44608153.0,ns,112
+core,r2d2,pool=08 worker=01,,,53144773.0,ns,120
+core,r2d2,pool=08 worker=01,,,62456614.0,ns,128
+core,r2d2,pool=08 worker=01,,,54414306.0,ns,136
+core,r2d2,pool=08 worker=01,,,55954846.0,ns,144
+core,r2d2,pool=08 worker=01,,,64652971.0,ns,152
+core,r2d2,pool=08 worker=01,,,62970527.0,ns,160
+core,r2d2,pool=08 worker=01,,,80770587.0,ns,168
+core,r2d2,pool=08 worker=01,,,79130845.0,ns,176
+core,r2d2,pool=08 worker=01,,,72715879.0,ns,184
+core,r2d2,pool=08 worker=01,,,77307098.0,ns,192
+core,r2d2,pool=08 worker=01,,,78607531.0,ns,200

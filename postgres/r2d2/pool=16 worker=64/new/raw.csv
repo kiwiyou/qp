@@ -1,0 +1,26 @@
+group,function,value,throughput_num,throughput_type,sample_measured_value,unit,iteration_count
+postgres,r2d2,pool=16 worker=64,,,18944501.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18279583.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,24740953.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,16638340.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18515690.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,19389512.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,19139205.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,19426013.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18201755.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,19954499.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,20304807.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,21818046.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,20292407.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18138854.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,21704343.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,19521288.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,20884922.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,20202305.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,17092427.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18504362.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18310557.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,20930124.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,19339683.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,18852371.0,ns,1
+postgres,r2d2,pool=16 worker=64,,,17920648.0,ns,1

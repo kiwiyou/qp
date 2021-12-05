@@ -1,0 +1,26 @@
+group,function,value,throughput_num,throughput_type,sample_measured_value,unit,iteration_count
+core,loop factorial 20,,,,3080779.0,ns,10
+core,loop factorial 20,,,,6225661.0,ns,20
+core,loop factorial 20,,,,9325841.0,ns,30
+core,loop factorial 20,,,,12413820.0,ns,40
+core,loop factorial 20,,,,15542402.0,ns,50
+core,loop factorial 20,,,,18653281.0,ns,60
+core,loop factorial 20,,,,21757662.0,ns,70
+core,loop factorial 20,,,,24860442.0,ns,80
+core,loop factorial 20,,,,27949922.0,ns,90
+core,loop factorial 20,,,,31055702.0,ns,100
+core,loop factorial 20,,,,34172182.0,ns,110
+core,loop factorial 20,,,,37319364.0,ns,120
+core,loop factorial 20,,,,40393743.0,ns,130
+core,loop factorial 20,,,,43510523.0,ns,140
+core,loop factorial 20,,,,46690206.0,ns,150
+core,loop factorial 20,,,,49726084.0,ns,160
+core,loop factorial 20,,,,52855365.0,ns,170
+core,loop factorial 20,,,,55923744.0,ns,180
+core,loop factorial 20,,,,59023324.0,ns,190
+core,loop factorial 20,,,,62166205.0,ns,200
+core,loop factorial 20,,,,65291786.0,ns,210
+core,loop factorial 20,,,,68458968.0,ns,220
+core,loop factorial 20,,,,71447845.0,ns,230
+core,loop factorial 20,,,,74597726.0,ns,240
+core,loop factorial 20,,,,77692606.0,ns,250
