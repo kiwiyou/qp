@@ -95,8 +95,8 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="iteration_times.svg">
-                                    <img src="iteration_times_small.svg" alt="Iteration Times" width="450" height="300" />
+                                <a href="regression.svg">
+                                    <img src="regression_small.svg" alt="Regression" width="450" height="300" />
                                 </a>
                             </td>
                         </tr>
@@ -117,34 +117,40 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>Slope</td>
+                                <td class="ci-bound">16.356 us</td>
+                                <td>16.845 us</td>
+                                <td class="ci-bound">17.436 us</td>
+                            </tr>
+                            <tr>
                                 <td>R&#xb2;</td>
-                                <td class="ci-bound">0.0138927</td>
-                                <td>0.0143650</td>
-                                <td class="ci-bound">0.0138186</td>
+                                <td class="ci-bound">0.2564300</td>
+                                <td>0.2660820</td>
+                                <td class="ci-bound">0.2521785</td>
                             </tr>
                             <tr>
                                 <td>Mean</td>
-                                <td class="ci-bound">403.03 us</td>
-                                <td>408.31 us</td>
-                                <td class="ci-bound">414.01 us</td>
+                                <td class="ci-bound">16.285 us</td>
+                                <td>16.755 us</td>
+                                <td class="ci-bound">17.229 us</td>
                             </tr>
                             <tr>
                                 <td title="Standard Deviation">Std. Dev.</td>
-                                <td class="ci-bound">23.782 us</td>
-                                <td>28.584 us</td>
-                                <td class="ci-bound">33.700 us</td>
+                                <td class="ci-bound">1.7074 us</td>
+                                <td>2.4030 us</td>
+                                <td class="ci-bound">3.0213 us</td>
                             </tr>
                             <tr>
                                 <td>Median</td>
-                                <td class="ci-bound">400.70 us</td>
-                                <td>405.27 us</td>
-                                <td class="ci-bound">414.11 us</td>
+                                <td class="ci-bound">16.072 us</td>
+                                <td>16.279 us</td>
+                                <td class="ci-bound">16.628 us</td>
                             </tr>
                             <tr>
                                 <td title="Median Absolute Deviation">MAD</td>
-                                <td class="ci-bound">23.669 us</td>
-                                <td>30.621 us</td>
-                                <td class="ci-bound">37.859 us</td>
+                                <td class="ci-bound">782.28 ns</td>
+                                <td>1.1197 us</td>
+                                <td class="ci-bound">1.5941 us</td>
                             </tr>
                         </tbody>
                     </table>
@@ -168,6 +174,9 @@
                         <li>
                             <a href="MAD.svg">MAD</a>
                         </li>
+                        <li>
+                            <a href="slope.svg">Slope</a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -176,8 +185,9 @@
                 <p>The plot on the left displays the average time per iteration for this benchmark. The shaded region
                     shows the estimated probability of an iteration taking a certain amount of time, while the line
                     shows the mean. Click on the plot for a larger view showing the outliers.</p>
-                <p>The plot on the right shows the average time per iteration for the samples. Each point 
-                    represents one sample.</p>
+                <p>The plot on the right shows the linear regression calculated from the measurements. Each point
+                    represents a sample, though here it shows the total time for the sample rather than time per
+                    iteration. The line is the line of best fit for these measurements.</p>
                 <p>See <a href="https://bheisler.github.io/criterion.rs/book/user_guide/command_line_output.html#additional-statistics">the
                         documentation</a> for more details on the additional statistics.</p>
             </section>
@@ -195,8 +205,8 @@
                                 </a>
                             </td>
                             <td>
-                                <a href="both/iteration_times.svg">
-                                    <img src="relative_iteration_times_small.svg" alt="Iteration Time Comparison" width="450"
+                                <a href="both/regression.svg">
+                                    <img src="relative_regression_small.svg" alt="Regression Comparison" width="450"
                                         height="300" />
                                 </a>
                             </td>
@@ -221,15 +231,15 @@
                     <tbody>
                         <tr>
                             <td>Change in time</td>
-                            <td class="ci-bound">+5.2262%</td>
-                            <td>+6.6551%</td>
-                            <td class="ci-bound">+8.1057%</td>
+                            <td class="ci-bound">-95.747%</td>
+                            <td>-95.623%</td>
+                            <td class="ci-bound">-95.498%</td>
                             <td>(p = 0.00 &lt;
                                 0.05)</td>
                         </tr>
                     </tbody>
                 </table>
-                Performance has regressed.
+                Performance has improved.
             </div>
             <div class="additional_plots">
                 <h4>Additional Plots:</h4>
@@ -253,8 +263,8 @@
                 curve represents the saved measurements from the last time this benchmark was run, while the blue curve
                 shows the measurements from this run. The lines represent the mean time per iteration. Click on the
                 plot for a larger view.</p>
-            <p>The plot on the right shows the iteration times for the two measurements. Again, the red dots represent
-                the previous measurement while the blue dots show the current measurement.</p>
+            <p>The plot on the right shows the two regressions. Again, the red line represents the previous measurement
+                while the blue line shows the current measurement.</p>
             <p>See <a href="https://bheisler.github.io/criterion.rs/book/user_guide/command_line_output.html#change">the
                     documentation</a> for more details on the additional statistics.</p>
         </section>
