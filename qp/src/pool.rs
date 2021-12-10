@@ -3,12 +3,12 @@ use crate::resource::Factory;
 use crossbeam_queue::ArrayQueue;
 use std::ops::{Deref, DerefMut};
 use std::sync::Arc;
-use tokio::sync::{Semaphore, SemaphorePermit};
+use async_lock::{Semaphore, SemaphoreGuard};
 
 pub struct Pooled<'a, F: Factory> {
     pool: &'a Inner<F>,
     resource: Option<F::Output>,
-    _permit: SemaphorePermit<'a>,
+    _permit: SemaphoreGuard<'a>,
 }
 
 impl<F: Factory> Deref for Pooled<'_, F> {
@@ -87,8 +87,7 @@ impl<F: Factory> Inner<F> {
         let permit = self
             .semaphore
             .acquire()
-            .await
-            .map_err(|_| Error::PoolClosed)?;
+            .await;
         Ok(Pooled {
             pool: self,
             resource: Some(self.pop_or_create_resource().await?),
@@ -100,8 +99,7 @@ impl<F: Factory> Inner<F> {
         let permit = self
             .semaphore
             .acquire()
-            .await
-            .map_err(|_| Error::PoolClosed)?;
+            .await;
         Ok(Pooled {
             pool: self,
             resource: Some(self.pop_or_create_resource_unchecked().await?),
